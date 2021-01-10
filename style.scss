@@ -48,6 +48,12 @@ header {
   }
   >div>div>nav {
     @include navig();
+    >button {
+      &:active,
+      &:focus {
+      outline: none;
+      }
+    }
   }
 }
 .headname {

@@ -68,6 +68,10 @@ header > div > div > nav a:hover {
   transition-duration: .6s;
 }
 
+header > div > div > nav > button:active, header > div > div > nav > button:focus {
+  outline: none;
+}
+
 .headname {
   height: 50px;
   margin-bottom: 0px;
