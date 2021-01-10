@@ -1,0 +1,320 @@
+// out: style.css, outputStyle: expanded;
+@import "variables";
+@import "mixins";
+//@include ara($one);
+@font-face {
+      font-family: 'Montserrat';
+      src: local('Montserrat Regular'), local('Montserrat-Regular'),
+      url('fonts/Montserrat-Regular.woff2') format('woff2'),
+      url('fonts/Montserrat-Regular.woff') format('woff'),
+      url('fonts/Montserrat-Regular.ttf') format('truetype');
+}
+@font-face {
+      font-family: 'PlayfairDisplay';
+      src: local('PlayfairDisplay Regular'), local('PlayfairDisplay Regular'),
+      url('fonts/PlayfairDisplay-Regular.woff2') format('woff2'),
+      url('fonts/PlayfairDisplay-Regular.woff') format('woff'),
+      url('fonts/PlayfairDisplay-Regular.ttf') format('truetype');
+}
+.nomargin {
+  margin:0 !important;
+}
+.nopadding {
+  padding: 0px;
+}
+h1,h2 {
+  color:#ffffff;
+  font-family: 'PlayfairDisplay';
+}
+p {
+  font-family: 'Montserrat';
+  color:#ffffff;
+}
+html {
+   scroll-behavior:smooth;
+}
+header {
+  font-family: 'Montserrat';
+  background-image: url(img/bgc.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 30px 10px 30px 10px;
+  min-height: 90vh;
+  margin:0;
+  position:relative;
+  >div>div.container {
+    padding: 0;
+  }
+  >div>div>nav {
+    @include navig();
+  }
+}
+.headname {
+  height: 50px;
+  margin-bottom: 0px;
+  color:#ffffff;
+  >div {
+  padding:0;
+  }
+}
+.navbar-collapse {
+  >div {
+  border: 1px solid transparent;
+  border-color: transparent #ffffff transparent transparent;
+  height: 50px;
+  }
+  >div:last-of-type {
+    border: 1px solid transparent;
+  }
+}
+.navbar-toggler {
+  background-color: #ffffff;
+}
+.bblock {
+  position:absolute;
+  top:70vh;
+  left:50%;
+  transform:translate(-50%, -50%);
+}
+.but{
+  @include butt(#99862A,5px 10px 5px 10px,#ffffff);
+}
+.razd1 {
+    @include sec(#282828,0%);
+  >div>div>div>.box {
+    margin-right: 8vw;
+    margin-left: 8vw;
+  }
+  >div {
+    border: 2px solid #ffffff;
+  }
+  >div>div {
+    padding:2vw;
+  }
+  >div>div>div>img {
+    padding-top:50px;
+  }
+}
+.box {
+  @include boxtip(1px,150px,#ffffff,25px,25px);
+}
+.razd2 {
+  @include sec(#E6E3C4,0%);
+  @include txtshadow();
+  text-align: left;
+  color:#000000;
+  >div>.r1 {
+  }
+  >div>.r2 {
+    margin-left: 15px;
+    >div>img {
+      margin-top:30px;
+      max-width:200px;
+    }
+  }
+  >div>div>div>h2 {
+    @include txtshadow();
+  }
+  >div>div>div>p {
+    @include txtshadow();
+    padding:0;
+  }
+  >div {
+    overflow: hidden;
+  }
+  >div>div,>div>div>div {
+    padding:0px;
+  }
+  >div>.box {
+    width:100%;
+    @include boxtip(1px,150px,#998431,25px,25px);
+  }
+  >div>div>.box {
+    width:200px;
+    @include boxtip(1px,50px,#998431,25px,25px);
+  }
+  >div>div>.but {
+    max-width: 300px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+.table {
+  font-family: 'Montserrat';
+  h4 {
+    font-family: 'PlayfairDisplay';
+  }
+  td {
+    border-color: #998431  transparent #998431 transparent;
+  }
+  th {
+    border-color: #998431  #998431 #998431 transparent;
+  }
+  tr:last-child>td {
+    border-bottom-color:transparent;
+  }
+  tr:first-child>td {
+    border-top-color:transparent;
+  }
+  tr:last-child>th {
+    border-bottom-color:transparent;
+  }
+  tr:first-child>th {
+    border-top-color:transparent;
+  }
+}
+.razd3 {
+  @include sec(#282828,0%);
+  position: relative;
+  overflow: hidden;
+  >div {
+    border: 2px solid #ffffff;
+    margin-top: 2vw;
+  }
+  >div>.container {
+    padding:2vw;
+  }
+  >div>.container>div>h2 {
+    padding-top: 5px;
+    top:6.5vw;
+    left:50%;
+    position: absolute;
+    transform:translate(-50%, -50%);
+    background-color: #282828;
+  }
+  >div>.container>div>.sr1 {
+    padding-top: 5px;
+    top:2vw;
+    left:18%;
+    position: absolute;
+    max-width:12vw;
+  }
+  >div>.container>div>.sr2 {
+    padding-top: 5px;
+    top:2vw;
+    right:18%;
+    position: absolute;
+    max-width:12vw;
+  }
+  >div>.container>div>form>div>div>.form-control-sm {
+    background-color: #282828;
+    border-color:transparent transparent #ffffff transparent;
+    color:#ffffff;
+    margin-bottom: 5px;
+    @include placeh(#ffffff);
+    font-family: 'Montserrat';
+  }
+  >div>.container>div>form>div>div {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  >div>.container>div>form>div>.form-control-sm {
+    min-width: 13vw;
+    background-color: #282828;
+    border-color:transparent transparent #ffffff transparent;
+    color:#ffffff;
+    margin-bottom: 5px;
+    @include placeh(#ffffff);
+  }
+  >div>.container>div>.but {
+    @include butt(#282828,5px 10px 5px 10px,#ffffff);
+    border: 1px solid #ffffff;
+    min-width:30vw;
+  }
+}
+footer {
+  @include sec(#998431,0%);
+  padding:15px 20vw 15px 20vw;
+  >nav>div {
+    div:last-child {
+      color:#ffffff;
+      border-color: transparent transparent #ffffff transparent;
+      padding:0px 5px 0px 5px;
+      font-size: 12px;
+      >div {
+        border: 1px solid #ffffff;
+        border-color: transparent #ffffff transparent transparent;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        text-align: center;
+        min-width: 12vw;
+        svg {
+          fill:#ffffff;
+          &:hover {
+            transform: scale(1.1);
+            transition-duration: .6s;
+          }
+        }
+        .youtube:hover {
+          fill:#e21212;
+          stroke:#ffffff;
+        }
+        .vk:hover {
+          fill:#4a3ceb;
+          stroke:#ffffff;
+        }
+        .faceboock:hover {
+          fill:#ffffff;
+          stroke:#1400ff;
+          stroke-width:2px;
+        }
+        &:last-child {
+          border-color: transparent transparent transparent transparent
+        }
+      }
+    }
+  }
+  >nav>div>div {
+    border: 1px solid #ffffff;
+    border-color: #ffffff transparent #ffffff transparent;
+  }
+  >nav>div>div {
+    :last-child {
+      border-color: transparent transparent transparent transparent;
+    }
+  }
+  >nav>div>div>a {
+    text-align: center;
+    padding:5px;
+    color:#ffffff;
+    text-decoration: none;
+    font-size: 12px;
+    &:hover {
+      color: #282828;
+      text-decoration: none;
+      transition-duration: .6s;
+    }
+  }
+}
+@media (max-width: 768px) {
+  h2 {
+    font-size: 16px;
+  }
+  p {
+    font-size: 14px;
+  }
+  header{
+  >div>div>nav {
+    border: 1px solid transparent;
+    }
+  }
+  .navbar-collapse {
+    >div {
+    border: 1px solid transparent;
+    }
+    >div:last-of-type {
+      border: 1px solid transparent;
+    }
+  }
+  .sr1, .sr2 {
+    display: none;
+  }
+}
+@media (max-width: 900px) {
+  footer {
+    >nav>div>div:last-child>div {
+      border-color:transparent transparent transparent transparent;
+    }
+  }
+}

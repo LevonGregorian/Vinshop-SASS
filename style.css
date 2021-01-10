@@ -1,0 +1,478 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: local("Montserrat Regular"), local("Montserrat-Regular"), url("fonts/Montserrat-Regular.woff2") format("woff2"), url("fonts/Montserrat-Regular.woff") format("woff"), url("fonts/Montserrat-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'PlayfairDisplay';
+  src: local("PlayfairDisplay Regular"), local("PlayfairDisplay Regular"), url("fonts/PlayfairDisplay-Regular.woff2") format("woff2"), url("fonts/PlayfairDisplay-Regular.woff") format("woff"), url("fonts/PlayfairDisplay-Regular.ttf") format("truetype");
+}
+
+.nomargin {
+  margin: 0 !important;
+}
+
+.nopadding {
+  padding: 0px;
+}
+
+h1, h2 {
+  color: #ffffff;
+  font-family: 'PlayfairDisplay';
+}
+
+p {
+  font-family: 'Montserrat';
+  color: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  font-family: 'Montserrat';
+  background-image: url(img/bgc.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 30px 10px 30px 10px;
+  min-height: 90vh;
+  margin: 0;
+  position: relative;
+}
+
+header > div > div.container {
+  padding: 0;
+}
+
+header > div > div > nav {
+  padding: 0px !important;
+  height: 50px;
+  margin-top: 20px;
+  border: 1px solid transparent;
+  border-color: #ffffff transparent #ffffff transparent;
+  margin-bottom: 10%;
+  text-align: center;
+  min-width: 55vw;
+}
+
+header > div > div > nav a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+header > div > div > nav a:hover {
+  color: #99862A;
+  text-decoration: none;
+  transition-duration: .6s;
+}
+
+.headname {
+  height: 50px;
+  margin-bottom: 0px;
+  color: #ffffff;
+}
+
+.headname > div {
+  padding: 0;
+}
+
+.navbar-collapse > div {
+  border: 1px solid transparent;
+  border-color: transparent #ffffff transparent transparent;
+  height: 50px;
+}
+
+.navbar-collapse > div:last-of-type {
+  border: 1px solid transparent;
+}
+
+.navbar-toggler {
+  background-color: #ffffff;
+}
+
+.bblock {
+  position: absolute;
+  top: 70vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.but {
+  background-color: #99862A;
+  margin: 20px;
+  padding: 5px 10px 5px 10px;
+  font-size: 16px;
+  text-align: center;
+  font-family: 'Montserrat';
+}
+
+.but:hover {
+  transform: scale(1.1);
+  transition-duration: .3s;
+}
+
+.but a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.but a:hover {
+  color: #ffffff;
+  text-decoration: none;
+  transition-duration: .6s;
+}
+
+.razd1 {
+  background-color: #282828;
+  padding: 5vw 20vw 5vw 20vw;
+  margin: 0;
+  text-align: center;
+}
+
+.razd1 > div > div > div > .box {
+  margin-right: 8vw;
+  margin-left: 8vw;
+}
+
+.razd1 > div {
+  border: 2px solid #ffffff;
+}
+
+.razd1 > div > div {
+  padding: 2vw;
+}
+
+.razd1 > div > div > div > img {
+  padding-top: 50px;
+}
+
+.box {
+  min-width: 150px;
+  border: 1px solid #ffffff;
+  border-color: transparent transparent #ffffff transparent;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.razd2 {
+  background-color: #e6e3c4;
+  padding: 5vw 20vw 5vw 20vw;
+  margin: 0;
+  text-align: center;
+  color: #000000;
+  text-shadow: #998431 1px 1px 0, #998431 -1px -1px 0, #998431 -1px 1px 0, #998431 1px -1px 0;
+  text-align: left;
+  color: #000000;
+}
+
+.razd2 > div > .r2 {
+  margin-left: 15px;
+}
+
+.razd2 > div > .r2 > div > img {
+  margin-top: 30px;
+  max-width: 200px;
+}
+
+.razd2 > div > div > div > h2 {
+  color: #000000;
+  text-shadow: #998431 1px 1px 0, #998431 -1px -1px 0, #998431 -1px 1px 0, #998431 1px -1px 0;
+}
+
+.razd2 > div > div > div > p {
+  color: #000000;
+  text-shadow: #998431 1px 1px 0, #998431 -1px -1px 0, #998431 -1px 1px 0, #998431 1px -1px 0;
+  padding: 0;
+}
+
+.razd2 > div {
+  overflow: hidden;
+}
+
+.razd2 > div > div, .razd2 > div > div > div {
+  padding: 0px;
+}
+
+.razd2 > div > .box {
+  width: 100%;
+  min-width: 150px;
+  border: 1px solid #998431;
+  border-color: transparent transparent #998431 transparent;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.razd2 > div > div > .box {
+  width: 200px;
+  min-width: 50px;
+  border: 1px solid #998431;
+  border-color: transparent transparent #998431 transparent;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.razd2 > div > div > .but {
+  max-width: 300px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.table {
+  font-family: 'Montserrat';
+}
+
+.table h4 {
+  font-family: 'PlayfairDisplay';
+}
+
+.table td {
+  border-color: #998431  transparent #998431 transparent;
+}
+
+.table th {
+  border-color: #998431  #998431 #998431 transparent;
+}
+
+.table tr:last-child > td {
+  border-bottom-color: transparent;
+}
+
+.table tr:first-child > td {
+  border-top-color: transparent;
+}
+
+.table tr:last-child > th {
+  border-bottom-color: transparent;
+}
+
+.table tr:first-child > th {
+  border-top-color: transparent;
+}
+
+.razd3 {
+  background-color: #282828;
+  padding: 5vw 20vw 5vw 20vw;
+  margin: 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.razd3 > div {
+  border: 2px solid #ffffff;
+  margin-top: 2vw;
+}
+
+.razd3 > div > .container {
+  padding: 2vw;
+}
+
+.razd3 > div > .container > div > h2 {
+  padding-top: 5px;
+  top: 6.5vw;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  background-color: #282828;
+}
+
+.razd3 > div > .container > div > .sr1 {
+  padding-top: 5px;
+  top: 2vw;
+  left: 18%;
+  position: absolute;
+  max-width: 12vw;
+}
+
+.razd3 > div > .container > div > .sr2 {
+  padding-top: 5px;
+  top: 2vw;
+  right: 18%;
+  position: absolute;
+  max-width: 12vw;
+}
+
+.razd3 > div > .container > div > form > div > div > .form-control-sm {
+  background-color: #282828;
+  border-color: transparent transparent #ffffff transparent;
+  color: #ffffff;
+  margin-bottom: 5px;
+  font-family: 'Montserrat';
+}
+
+.razd3 > div > .container > div > form > div > div > .form-control-sm::-moz-placeholder {
+  color: #ffffff;
+}
+
+.razd3 > div > .container > div > form > div > div > .form-control-sm::placeholder {
+  color: #ffffff;
+}
+
+.razd3 > div > .container > div > form > div > div > .form-control-sm::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.razd3 > div > .container > div > form > div > div > .form-control-sm::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.razd3 > div > .container > div > form > div > div {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.razd3 > div > .container > div > form > div > .form-control-sm {
+  min-width: 13vw;
+  background-color: #282828;
+  border-color: transparent transparent #ffffff transparent;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+.razd3 > div > .container > div > form > div > .form-control-sm::-moz-placeholder {
+  color: #ffffff;
+}
+
+.razd3 > div > .container > div > form > div > .form-control-sm::placeholder {
+  color: #ffffff;
+}
+
+.razd3 > div > .container > div > form > div > .form-control-sm::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.razd3 > div > .container > div > form > div > .form-control-sm::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.razd3 > div > .container > div > .but {
+  background-color: #282828;
+  margin: 20px;
+  padding: 5px 10px 5px 10px;
+  font-size: 16px;
+  text-align: center;
+  font-family: 'Montserrat';
+  border: 1px solid #ffffff;
+  min-width: 30vw;
+}
+
+.razd3 > div > .container > div > .but:hover {
+  transform: scale(1.1);
+  transition-duration: .3s;
+}
+
+.razd3 > div > .container > div > .but a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.razd3 > div > .container > div > .but a:hover {
+  color: #ffffff;
+  text-decoration: none;
+  transition-duration: .6s;
+}
+
+footer {
+  background-color: #998431;
+  padding: 5vw 20vw 5vw 20vw;
+  margin: 0;
+  text-align: center;
+  padding: 15px 20vw 15px 20vw;
+}
+
+footer > nav > div div:last-child {
+  color: #ffffff;
+  border-color: transparent transparent #ffffff transparent;
+  padding: 0px 5px 0px 5px;
+  font-size: 12px;
+}
+
+footer > nav > div div:last-child > div {
+  border: 1px solid #ffffff;
+  border-color: transparent #ffffff transparent transparent;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+  min-width: 12vw;
+}
+
+footer > nav > div div:last-child > div svg {
+  fill: #ffffff;
+}
+
+footer > nav > div div:last-child > div svg:hover {
+  transform: scale(1.1);
+  transition-duration: .6s;
+}
+
+footer > nav > div div:last-child > div .youtube:hover {
+  fill: #e21212;
+  stroke: #ffffff;
+}
+
+footer > nav > div div:last-child > div .vk:hover {
+  fill: #4a3ceb;
+  stroke: #ffffff;
+}
+
+footer > nav > div div:last-child > div .faceboock:hover {
+  fill: #ffffff;
+  stroke: #1400ff;
+  stroke-width: 2px;
+}
+
+footer > nav > div div:last-child > div:last-child {
+  border-color: transparent transparent transparent transparent;
+}
+
+footer > nav > div > div {
+  border: 1px solid #ffffff;
+  border-color: #ffffff transparent #ffffff transparent;
+}
+
+footer > nav > div > div :last-child {
+  border-color: transparent transparent transparent transparent;
+}
+
+footer > nav > div > div > a {
+  text-align: center;
+  padding: 5px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+footer > nav > div > div > a:hover {
+  color: #282828;
+  text-decoration: none;
+  transition-duration: .6s;
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 16px;
+  }
+  p {
+    font-size: 14px;
+  }
+  header > div > div > nav {
+    border: 1px solid transparent;
+  }
+  .navbar-collapse > div {
+    border: 1px solid transparent;
+  }
+  .navbar-collapse > div:last-of-type {
+    border: 1px solid transparent;
+  }
+  .sr1, .sr2 {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  footer > nav > div > div:last-child > div {
+    border-color: transparent transparent transparent transparent;
+  }
+}

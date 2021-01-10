@@ -1,0 +1,72 @@
+@mixin navig() {
+    padding:0px !important;
+    height: 50px;
+    margin-top: 20px;
+    border: 1px solid transparent;
+    border-color: #ffffff transparent #ffffff transparent;
+    margin-bottom: 10%;
+    text-align:center;
+    min-width: 55vw;
+    a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+    a:hover {
+      color: #99862A;
+      text-decoration: none;
+      transition-duration: .6s;
+    }
+}
+@mixin butt($bbgdclr,$bpad,$baclr) {
+  background-color: $bbgdclr;
+  margin: 20px;
+  padding:5px 10px 5px 10px;
+  font-size: 16px;
+  text-align: center;
+  font-family: 'Montserrat';
+  &:hover{
+    transform: scale(1.1);
+    transition-duration: .3s;
+  }
+  a {
+    color: $baclr;
+    text-decoration: none;
+  }
+  a:hover {
+    color: $baclr;
+    text-decoration: none;
+    transition-duration: .6s;
+  }
+}
+@mixin sec($bgncolor,$lght) {
+  background-color:lighten($bgncolor,$lght);
+  padding: 5vw 20vw 5vw 20vw;
+  margin:0;
+  text-align: center;
+}
+@mixin txtshadow() {
+  color:#000000;
+  text-shadow: #998431 1px 1px 0, #998431 -1px -1px 0,
+               #998431 -1px 1px 0, #998431 1px -1px 0;
+}
+@mixin boxtip($bborder,$bminwidth,$bcolor,$bmargint,$bmarginb) {
+  min-width: $bminwidth;
+  border: $bborder solid $bcolor;
+  border-color: transparent transparent  $bcolor transparent;
+  margin-top: $bmargint;
+  margin-bottom: $bmarginb;
+}
+@mixin placeh($plhclr) {
+  &::-moz-placeholder {
+  color: $plhclr;
+  }
+  &::placeholder {
+    color: $plhclr;
+  }
+  &::-ms-input-placeholder {
+    color: $plhclr;
+  }
+  &::-webkit-input-placeholder {
+    color: $plhclr;
+  }
+}
